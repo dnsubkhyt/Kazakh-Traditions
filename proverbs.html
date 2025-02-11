@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Қазақ мақал-мәтелдері</title>
+  <link rel="stylesheet" href="styles/proverbs.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>Қазақ дәстүрлері мен мақал-мәтелдері</h1>
+      <p>Қазақстанның бай мәдениетін зерттеңіз</p>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="traditions.html">Дәстүрлер</a></li>
+        <li><a href="proverbs.html">Мақал-мәтелдер</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="intro">
+      <h2>Қазақ мақал-мәтелдері</h2>
+      <p>Қазақ мақал-мәтелдері – біздің халқымыздың өмірлік философиясы мен тәжірибесін бейнелейтін терең мәні бар даналық сөздер. Әрбір мақала өзінің мәдени-әлеуметтік маңыздылығымен ерекшеленеді.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <h3>Мақал-мәтелдер санаттары</h3>
+      <ul>
+        <li><button class="category-btn" onclick="showProverbs('education')">Үлгі-өнеге, тәлім-тәрбие туралы</button></li>
+        <li><button class="category-btn" onclick="showProverbs('homeland')">Отан, туған жер туралы</button></li>
+        <li><button class="category-btn" onclick="showProverbs('education1')">Білім, оқу туралы</button></li>
+        <li><button class="category-btn" onclick="showProverbs('unity')">Бірлік, ынтымақ туралы</button></li>
+        <li><button class="category-btn" onclick="showProverbs('behavior')">Жақсы-жаман, мінез-құлық туралы</button></li>
+        <li><button class="category-btn" onclick="showProverbs('kinship')">Ағайындық-туыстық туралы</button></li>
+        <li><button class="category-btn" onclick="showProverbs('work')">Еңбек - еріншектік, ұста, шебер туралы</button></li>
+        <li><button class="category-btn" onclick="showProverbs('courage')">Ерлік, батырлық, қорқақтық туралы</button></li>
+      </ul>
+    </section>
+
+    <!-- Modal for Proverbs -->
+    <div class="modal" id="proverb-modal">
+      <div class="modal-content">
+        <span class="close-btn" id="close-proverb-modal">&times;</span>
+        <div id="proverb-content-area">
+          <!-- Proverbs will be injected here based on the selected category -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+      <p>Динислам Бахыт | Астана IT университеті</p>
+      <div class="footer-links">
+        <a href="mailto:239304@astanait.edu.kz" class="footer-link">Email: 239304@astanait.edu.kz</a>
+      </div>
+      <p class="copyright">© 2025 Қазақ дәстүрлері мен мақал-мәтелдері. Барлық құқықтар сақталған.</p>
+    </div>
+  </footer>
+
+  <script src="proverbs.js"></script>
+</body>
+</html>

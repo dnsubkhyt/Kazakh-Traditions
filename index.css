@@ -1,0 +1,245 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #2a3d66;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #ddd;
+}
+
+header .logo h1 {
+  font-size: 2rem;
+}
+
+header .logo p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #f1f1f1;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger menu (hidden on desktop, visible on mobile) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+  /* Main content area */
+  main {
+    padding: 30px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    /* Hide the nav items and show the menu toggle */
+    header nav {
+      display: none;
+    }
+  
+    /* Show the hamburger menu */
+    .menu-toggle {
+      display: flex;
+    }
+  
+    /* Show the nav when menu is active */
+    header nav.active {
+      display: block;
+      position: absolute;
+      background-color: #2a3d66;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav ul li {
+      margin: 10px 0;
+    }
+  
+    header nav ul li a {
+      padding: 10px 25px; /* Add some padding to the links */
+      display: block;
+      border-radius: 5px;
+      font-size: 1.4rem;
+      width: 40%; /* Make each link occupy less width */
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+  
+    header nav ul li a:hover {
+      background-color: #f1f1f1;
+      color: #2a3d66;
+    }
+  }
+  
+  /* Intro section */
+  .intro {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .intro h2 {
+    font-size: 2.5rem;
+    color: #2a3d66;
+  }
+  
+  .intro p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Definitions section */
+  .definitions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .definition {
+    width: 48%;
+    background-color: #e8f0fe;
+    padding: 25px;
+    border-radius: 8px;
+  }
+  
+  .definition h3 {
+    color: #2a3d66;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .definition p {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Importance section */
+  .importance {
+    text-align: center;
+    background-color: #ffe8b5;
+    padding: 25px;
+    border-radius: 8px;
+  }
+  
+  .importance h3 {
+    color: #2a3d66;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .importance p {
+    color: #555;
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+/* Footer */
+footer {
+    background-color: #2a3d66;
+    color: white;
+    text-align: center;
+    padding: 30px 20px; /* Increased padding for more space */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  footer .footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  footer .footer-links {
+    margin: 20px 0;
+  }
+  
+  footer .footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .footer-link:hover {
+    color: #f1f1f1; /* Slight hover effect */
+  }
+  
+  footer .copyright {
+    font-size: 0.9rem; /* Slightly smaller font for copyright */
+    margin-top: 10px;
+  }
+  
+  /* Media query for responsive footer */
+  @media (max-width: 768px) {
+    footer .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer .footer-link {
+      margin: 5px 0;
+    }
+  }
+  

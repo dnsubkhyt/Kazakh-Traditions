@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Қазақ дәстүрлері</title>
+  <link rel="stylesheet" href="styles/traditions.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>Қазақ дәстүрлері мен мақал-мәтелдері</h1>
+      <p>Қазақстанның бай мәдениетін зерттеңіз</p>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html">Басты бет</a></li>
+        <li><a href="traditions.html">Дәстүрлер</a></li>
+        <li><a href="proverbs.html">Мақал-мәтелдер</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="intro">
+      <h2>Қазақ дәстүрлері</h2>
+      <p>Қазақ халқының бай мәдениеті мен дәстүрлері ғасырлар бойы сақталып келеді. Бұл дәстүрлер біздің ұлттық бірегейлігімізді көрсетеді.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <h3>Бала тәрбиесіне байланысты салт-дәстүрлер</h3>
+      <ul>
+        <li><button class="category-btn" onclick="showTraditions('1')">Үлттық ойындар</button></li>
+        <li><button class="category-btn" onclick="showTraditions('2')">Кіндік шеше</button></li>
+        <li><button class="category-btn" onclick="showTraditions('3')">Шілде қағу</button></li>
+        <li><button class="category-btn" onclick="showTraditions('4')">Тымаққа салу</button></li>
+        <li><button class="category-btn" onclick="showTraditions('5')">Сүйіндір</button></li>
+        <li><button class="category-btn" onclick="showTraditions('6')">Бесікке салу</button></li>
+        <li><button class="category-btn" onclick="showTraditions('7')">Ат қою</button></li>
+        <li><button class="category-btn" onclick="showTraditions('8')">Қырқынан шығару</button></li>
+        <li><button class="category-btn" onclick="showTraditions('9')">Асырап алу</button></li>
+        <li><button class="category-btn" onclick="showTraditions('10')">Шілдехана</button></li>
+        <li><button class="category-btn" onclick="showTraditions('11')">Тұсау кесу</button></li>
+        <li><button class="category-btn" onclick="showTraditions('12')">Сүндет тойы</button></li>
+        <li><button class="category-btn" onclick="showTraditions('13')">Ашамайға мінгізу</button></li>
+        <li><button class="category-btn" onclick="showTraditions('14')">Қыз баланың құлағын тесу</button></li>
+        <li><button class="category-btn" onclick="showTraditions('15')">Көгентүп</button></li>
+        <li><button class="category-btn" onclick="showTraditions('16')">Аузына түкіру</button></li>
+        <li><button class="category-btn" onclick="showTraditions('17')">Тыйым</button></li>
+        <li><button class="category-btn" onclick="showTraditions('18')">Қозы жасы</button></li>
+        <li><button class="category-btn" onclick="showTraditions('19')">Қой жасы</button></li>
+        <li><button class="category-btn" onclick="showTraditions('20')">Жылқы жасы</button></li>
+        <li><button class="category-btn" onclick="showTraditions('21')">Жеті ата</button></li>
+
+      </ul>
+    </section>
+
+    <!-- Modal for Traditions -->
+    <div class="modal" id="tradition-modal">
+      <div class="modal-content">
+        <span class="close-btn" id="close-modal">&times;</span>
+        <div id="modal-content-area">
+          <!-- Traditions will be injected here based on the selected category -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-content">
+      <p>Динислам Бахыт | Астана IT университеті</p>
+      <div class="footer-links">
+        <a href="mailto:239304@astanait.edu.kz" class="footer-link">Email: 239304@astanait.edu.kz</a>
+      </div>
+      <p class="copyright">© 2025 Қазақ дәстүрлері мен мақал-мәтелдері. Барлық құқықтар сақталған.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
